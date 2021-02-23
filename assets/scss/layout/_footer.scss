@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    border-top: solid 2px #111111;
+    margin-top: rem(105);
+    justify-content: space-between;
+
+    &__card {
+        width: 33.3%;
+        margin-top: rem(30);
+        margin-bottom: rem(32);
+        display: flex;
+    }
+
+    &__card-img {
+        margin-right: rem(20);
+    }
+
+    &__card-text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &__card-top {
+        font-weight: 700;
+        font-size: rem(24);
+        line-height: rem(32);
+        margin: 0;
+        color: $primary-color;
+        
+    }
+
+    &__card-bottom {
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(32);
+        margin: 0;
+        color: rgba(51, 51, 51, 0.5);
+    
+    }
+
+    @media (max-width: $md) {
+        .footer {
+            &__card {
+                width: 100%;
+                display: inline-block;
+            }
+    }
+}
+}

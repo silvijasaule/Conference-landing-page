@@ -1,0 +1,74 @@
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: rem(120);
+
+    &__left {
+        width: 40%;
+    }
+
+
+    &__left-top {
+        font-weight: 400;
+        font-size: rem(19);
+        line-height: rem(32p);
+        letter-spacing: rem(3);
+        text-transform: uppercase;
+        color: $secondary-color;
+    }
+
+    &__middle {
+        font-weight: 700;
+        font-size: rem(72);
+        line-height: rem(80);
+        letter-spacing: rem(-2);
+        color: $primary-color;
+        margin-top: rem(22);
+        margin-bottom: rem(26);
+    }
+
+    &__bottom {
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: em(32);
+        color: $primary-color;
+        margin-bottom: rem(35)
+    }
+
+    &__button {
+        @include button ($secondary-color, white);
+        transition:all ease 0.3s; 
+    }
+
+    &__button:hover {
+        @include button (white, $primary-color);
+    }
+
+    &__button-text {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__button-text:hover {
+        color: $primary-color;
+    }
+
+    &__right {
+        width: 80%;
+    }
+
+    &__img {
+        transform: translateX(300px);
+    }
+
+    @media (max-width: $md) {
+        .main {
+            &__left {
+                width:100%;
+            }
+        }
+        
+    }
+}
